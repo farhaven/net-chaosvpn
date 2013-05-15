@@ -11,8 +11,9 @@ HOMEPAGE =	https://github.com/ryd/chaosvpn
 MAINTAINER =	Gregor Best <gbe@ring0.de>
 
 # BSD
-PERMIT_PACKAGE_FTP=	Yes
-PERMIT_DISTFILES_FTP=	Yes
+PERMIT_PACKAGE_CDROM =	Yes
+PERMIT_PACKAGE_FTP =		Yes
+PERMIT_DISTFILES_FTP =	Yes
 
 WANTLIB=	c crypto z
 RUN_DEPENDS= net/tinc
