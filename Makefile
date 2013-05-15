@@ -29,6 +29,6 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/man/chaosvpn.1 ${PREFIX}/man/man1
 	${INSTALL_DATA} ${WRKSRC}/man/chaosvpn.conf.5 ${PREFIX}/man/man5
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/chaosvpn
-	${INSTALL_DATA} ${WRKSRC}/chaosvpn.conf.freebsd ${PREFIX}/share/examples/chaosvpn/chaosvpn.conf
+	${INSTALL_DATA} ${FILESDIR}/chaosvpn.conf ${PREFIX}/share/examples/chaosvpn/chaosvpn.conf
 
 .include <bsd.port.mk>
