@@ -1,1 +1,8 @@
-ChaosVPN is a system to connect Hackers. Design principals include that it should be without Single Point of Failure, make usage of full encryption, use RFC1918 ip ranges, scales well on >100 connected networks and is being able to run on a embedded hardware you will find in our todays router.
+ChaosVPN is a system to connect Hackers. Design principals include that
+it should be without Single Point of Failure, make usage of full
+encryption, use RFC1918 ip ranges, scales well on >100 connected
+networks and is being able to run on a embedded hardware you will find
+in our todays router.
+
+ChaosVPN uses and automatically configures the tinc VPN daemon for point
+to point connections.
