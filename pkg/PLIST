@@ -1,0 +1,7 @@
+@comment $OpenBSD$
+@exec echo Copy /usr/local/share/examples/chaosvpn.conf into /etc/tinc
+@man man/man1/chaosvpn.1
+@man man/man5/chaosvpn.conf.5
+@bin sbin/chaosvpn
+share/examples/chaosvpn/
+share/examples/chaosvpn/chaosvpn.conf
