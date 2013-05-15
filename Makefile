@@ -1,30 +1,27 @@
-# $OpenBSD: Makefile,v 1.20 2012/09/25 20:54:39 brad Exp $
+# $OpenBSD$
 
-COMMENT=	VPN daemon
-VERSION=	2.15
-DISTNAME=	chaosvpn-${VERSION}
-REVISION=	0
-CATEGORIES=    	net
+COMMENT =	configuration manager for the tinc VPN daemon
+VERSION =	2.15
+DISTNAME =	chaosvpn-${VERSION}
+REVISION =	0
+CATEGORIES =	net
 
-HOMEPAGE=	http://github.com/ryd/chaosvpn
+HOMEPAGE =	https://github.com/ryd/chaosvpn
 
-MAINTAINER=	Gregor Best <gbe @ ring0 . de>
+MAINTAINER =	Gregor Best <gbe@ring0.de>
 
-# MIT'ish
+# BSD
 PERMIT_PACKAGE_FTP=	Yes
-PERMIT_DISTFILES_CDROM=	Yes
 PERMIT_DISTFILES_FTP=	Yes
 
-# WANTLIB=	c m pthread stdc++
-WANTLIB=	c ssl
+WANTLIB=	c crypto z
 RUN_DEPENDS= net/tinc
 
 DISTFILES= v${VERSION}.tar.gz
 MASTER_SITES=	${HOMEPAGE}/archive/
 
-# CONFIGURE_STYLE=gnu
-
-USE_GMAKE=yes
+USE_GMAKE=	yes
+NO_TEST=	yes
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKBUILD}/chaosvpn ${PREFIX}/sbin
