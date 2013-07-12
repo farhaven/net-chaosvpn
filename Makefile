@@ -1,7 +1,7 @@
 # $OpenBSD$
 
 COMMENT =	configuration manager for the tinc VPN daemon
-VERSION =	2.15
+VERSION =	2.17
 DISTNAME =	chaosvpn-${VERSION}
 REVISION =	0
 CATEGORIES =	net
